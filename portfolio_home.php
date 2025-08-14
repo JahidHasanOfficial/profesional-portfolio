@@ -13,9 +13,18 @@
             <div class="col-12 text-center mb-2">
                 <ul class="list-inline mb-4" id="portfolio-flters">
                     <li class="btn btn-outline-light mr-5 active" data-filter="*">All</li>
-                    <li class="btn btn-outline-light mr-5" data-filter=".first">Design</li>
-                    <li class="btn btn-outline-light mr-5" data-filter=".second">Development</li>
-                    <li class="btn btn-outline-light mr-5" data-filter=".third">Marketing</li>
+<?php
+$sql = mysqli_query($con, "SELECT * FROM service_category");
+while ($row = mysqli_fetch_assoc($sql)) { ?>
+    <li class="btn btn-outline-light me-5"
+    >
+        <?php echo htmlspecialchars($row['cat_name']); ?>
+    </li>
+<?php
+}
+?>
+
+
                 </ul>
             </div>
         </div>
@@ -76,47 +85,11 @@
                     </p>
 
                 </div>
-                <div class="row g-4">
-                    <div class="row">
-                        <!-- PHP -->
-                        <div class="col-lg-4 col-md-6 mb-4">
-                            <div class="card border-0 text-center p-4">
-                                <div class="d-flex align-items-center justify-content-center">
-                                    <i class="fab fa-php fa-2x text-primary"></i>
-                                    <h5 class="fw-bold ms-3 ml-3 mb-0">PHP</h5>
-                                </div>
+               <div class="text-center">
+                              <a class="text-white btn bg-info btn-primary" target="blank" href="https://www.youtube.com/">
+                                Live Preview
+                              </a>
                             </div>
-                        </div>
-
-                        <!-- Laravel -->
-                        <div class="col-lg-4 col-md-6 mb-4">
-                            <div class="card border-0 text-center p-4">
-                                <div class="d-flex align-items-center justify-content-center">
-                                    <i class="fab fa-laravel fa-2x text-danger"></i>
-                                    <h5 class="fw-bold ms-3 ml-3 mb-0">Laravel</h5>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- JavaScript -->
-                        <div class="col-lg-4 col-md-6 mb-4">
-                            <div class="card border-0 text-center p-4">
-                                <div class="d-flex align-items-center justify-content-center">
-                                    <i class="fab fa-link fa-2x text-warning"></i>
-                                    <h5 class="fw-bold ms-3 ml-3 mb-0">Live</h5>
-                                </div>
-                            </div>
-                        </div>
-
-
-
-
-
-
-
-                    </div>
-
-                </div>
             </div>
 
 
@@ -149,56 +122,6 @@
 
 
 
-            <div class="col-lg-6 col-md-6 mb-4 portfolio-item second">
-                <div class="position-relative overflow-hidden mb-2">
-                    <img class="img-fluid rounded w-100" src="assets/img/portfolio-2.jpg" alt="">
-                    <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
-                        <a href="assets/img/portfolio-2.jpg" data-lightbox="portfolio">
-                            <i class="fa fa-plus text-white" style="font-size: 60px;"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-6 col-md-6 mb-4 portfolio-item third">
-                <div class="position-relative overflow-hidden mb-2">
-                    <img class="img-fluid rounded w-100" src="assets/img/portfolio-3.jpg" alt="">
-                    <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
-                        <a href="assets/img/portfolio-3.jpg" data-lightbox="portfolio">
-                            <i class="fa fa-plus text-white" style="font-size: 60px;"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-6 col-md-6 mb-4 portfolio-item first">
-                <div class="position-relative overflow-hidden mb-2">
-                    <img class="img-fluid rounded w-100" src="assets/img/portfolio-4.jpg" alt="">
-                    <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
-                        <a href="assets/img/portfolio-4.jpg" data-lightbox="portfolio">
-                            <i class="fa fa-plus text-white" style="font-size: 60px;"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-6 col-md-6 mb-4 portfolio-item second">
-                <div class="position-relative overflow-hidden mb-2">
-                    <img class="img-fluid rounded w-100" src="assets/img/portfolio-5.jpg" alt="">
-                    <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
-                        <a href="assets/img/portfolio-5.jpg" data-lightbox="portfolio">
-                            <i class="fa fa-plus text-white" style="font-size: 60px;"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-6 col-md-6 mb-4 portfolio-item third">
-                <div class="position-relative overflow-hidden mb-2">
-                    <img class="img-fluid rounded w-100" src="assets/img/portfolio-6.jpg" alt="">
-                    <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
-                        <a href="assets/img/portfolio-6.jpg" data-lightbox="portfolio">
-                            <i class="fa fa-plus text-white" style="font-size: 60px;"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
         </div>
     </div>
 </div>

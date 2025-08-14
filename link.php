@@ -1,4 +1,12 @@
 
+  <?php 
+
+  require_once __DIR__ . '/itm-admin/includes/conn.php';
+require_once __DIR__ . '/itm-admin/includes/dbconfig.php';
+
+
+  ?> 
+ 	
 
     <!-- Favicon -->
     <link href="assets/img/jahid.jpg" rel="icon">
