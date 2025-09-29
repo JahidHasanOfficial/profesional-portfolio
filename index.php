@@ -17,42 +17,13 @@
 
   <?php include('header.php'); ?>
 
-
   <!-- Header Start -->
   <?php include('hero-section.php'); ?>
   <!-- Header End -->
 
-
   <!-- About Start -->
   <?php include('about_home.php'); ?>
   <!-- About End -->
-
-  <!-- <style>
-    body {
-        background: linear-gradient(325deg, #0c2238, #52577a, #3e5c76, #020910);
-    }
-</style>
-
-<script>
-    // ফাংশন তৈরি করুন যা ডিগ্রী মান পরিবর্তন করবে
-    function updateGradientDegree() {
-        // এলিমেন্ট সিলেক্ট করুন
-        const section = document.querySelector('body');
-        
-        // র্যান্ডম ডিগ্রী জেনারেট করুন (0 থেকে 360 এর মধ্যে)
-        const randomDegree = Math.floor(Math.random() * 360);
-        
-        // নতুন গ্রেডিয়েন্ট স্ট্রিং তৈরি করুন
-        const newGradient = `linear-gradient(${randomDegree}deg, #0c2238, #52577a, #3e5c76, #020910)`;
-        
-        // স্টাইল প্রয়োগ করুন
-        section.style.background = newGradient;
-    }
-
-    // নির্দিষ্ট সময় পরপর ফাংশন কল করুন (উদাহরণস্বরূপ প্রতি 3 সেকেন্ডে)
-    setInterval(updateGradientDegree, 3000);
-</script> -->
-
 
   <!-- Expericence Start -->
   <?php include('experience.php'); ?>
@@ -71,27 +42,22 @@
   ?>
   <!-- Portfolio End -->
 
-
   <!-- Education Start -->
   <?php include('education.php'); ?>
   <!-- Education End -->
-
 
   <!-- Testimonial Start -->
   <?php //include('testimonial.php'); 
   ?>
   <!-- Testimonial End -->
 
-
   <!-- Blog Start -->
   <?php include('blog-home.php'); ?>
   <!-- Blog End -->
-
 
   <!-- Contact Start -->
   <?php include('contact-home.php'); ?>
   <!-- Contact End -->
 
-
-
+  <!-- Footer Start -->
   <?php include('footer.php'); ?>
